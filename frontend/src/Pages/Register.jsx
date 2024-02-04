@@ -33,25 +33,20 @@ export const Register = () => {
 
   return (
     <div>
-      <div
-        onClick={handleToggleRegisterPage}
-       ></div>
+      <div onClick={handleToggleRegisterPage}></div>
       <div>
         <div>
-          <div
-            onClick={handleToggleRegisterPage}>
-            ESC
-          </div>
+          <div onClick={handleToggleRegisterPage}>ESC</div>
           <h1>REGISTRATION</h1>
-          <form
-            onSubmit={handlePostUser}>
+          <form onSubmit={handlePostUser}>
             <input
               onChange={handleInputChange}
               type="text"
               name="username"
               value={newUserdata.username}
               placeholder="Enter your username"
-              required/>
+              required
+            />
             <input
               onChange={handleInputChange}
               type="email"
@@ -59,24 +54,29 @@ export const Register = () => {
               required
               value={newUserdata.email}
               placeholder="Enter your email id"
-              />
+            />
             <input
               onChange={handleInputChange}
               type="password"
               name="password"
               value={newUserdata.password}
               placeholder="Enter password"
-              required/>
-            <input
-              type="submit"
-              value="SUBMIT"/>
+              required
+            />
+            <select
+              name="role"
+              id=""
+              value={newUserdata.role}
+              onChange={handleInputChange}
+            >
+              <option value="">Select the role</option>
+              <option value="CREATOR">Teacher</option>
+              <option value="VIEW_ALL">Student</option>
+            </select>
+            <input type="submit" value="SUBMIT" />
             <p>
               Already have account?{" "}
-              <Link
-                onClick={handleToggleLoginPage}
-              >
-                Login
-              </Link>
+              <Link onClick={handleToggleLoginPage}>Login</Link>
             </p>
           </form>
         </div>

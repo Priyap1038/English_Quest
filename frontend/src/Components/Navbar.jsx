@@ -1,18 +1,19 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
 
-    const navigate=useNavigate();
- const gologin=()=>{
-    navigate("/login")
- }
+//     const navigate=useNavigate();
+//  const gologin=()=>{
+//     navigate("/login")
+//  }
 
   return (
-    <div style={{background:"red", display:"flex",justifyContent:"space-between"}}>
-        <h4>Books</h4>
-        <button onClick={gologin}>Login</button>
+    <div style={{background:"#32a2a8", display:"flex",justifyContent:"space-between"}}>
+      <Link to="/" ><h4>Home</h4></Link>
+       <Link to="/books" > <h4>Books</h4></Link>
+       <Link to="/login" > <h4>Login</h4></Link>
     </div>
   )
 }

@@ -30,15 +30,16 @@ const Login = () => {
       alert("Wrong Credential");
     } else if (status === 200) {
       alert("You have logged in successfully");
+      navigate("/")
     } else {
       alert("Something went wrong!");
     }
   };
 
-  if (token) {
-    handleToggleLoginPage(false);
-    navigate("/books");
-  }
+  // if (token) {
+  //   handleToggleLoginPage(false);
+  //   navigate("/");
+  // }
 
   return (
             <div style={{border:"solid 1px green", margin:"20%"}}>
@@ -74,7 +75,7 @@ const Login = () => {
                           <option value="VIEW_ALL">Student</option>
                         </select>
                         <input type='submit' value="LOGIN" />
-                        <p>Don't have an account? <Link onClick={handleToggleRegisterPage} >Signup</Link></p>
+                        <p>Don't have an account? <Link to="/register">Signup</Link></p>
                     </div>
                 </form>
             </div>

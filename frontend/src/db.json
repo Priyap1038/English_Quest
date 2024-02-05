@@ -1,0 +1,34 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "description": "A novel by F. Scott Fitzgerald that captures the excesses of the Jazz Age.",
+      "price": 19.99,
+      "category": "Classic",
+      "createdAt": "new Date()"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "Harper Lee's classic novel about racial injustice in the American South.",
+      "price": 15.50,
+      "category": "Fiction",
+      "createdAt": "new Date()"
+    },
+    {
+      "title": "1984",
+      "description": "George Orwell's dystopian novel exploring the dangers of totalitarianism.",
+      "price": 14.95,
+      "category": "Science Fiction",
+      "createdAt": "new Date()"
+    },
+    
+  {
+      "title": "The Catcher in the Rye",
+      "description": "J.D. Salinger's influential novel about teenage angst and rebellion.",
+      "price": 12.75,
+      "category": "Fiction",
+      "createdAt": "new Date()"
+    }
+  ]
+  
+
+  

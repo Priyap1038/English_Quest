@@ -76,7 +76,7 @@ export const Register = () => {
             <input type="submit" value="SUBMIT" />
             <p>
               Already have account?{" "}
-              <Link onClick={handleToggleLoginPage}>Login</Link>
+              <Link to="/login">Login</Link>
             </p>
           </form>
         </div>
@@ -84,3 +84,5 @@ export const Register = () => {
     </div>
   );
 };
+
+export default Register;
